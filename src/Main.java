@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        bye();
+        System.out.println(bye());
     }
-    public static void bye(){
-        System.out.println("Bye!");
+    public static String bye(){
+        return "Bye!";
     }
 }
