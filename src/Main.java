@@ -3,7 +3,7 @@ public class Main {
         System.out.println("Hello world!");
         bye();
         System.out.println(summa(5,5));
-
+        name();
     }
     public static void bye(){
         System.out.println("Bye!");
