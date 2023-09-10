@@ -11,4 +11,8 @@ public class Main {
     public static int summa(int a, int b){
         return a + b;
     }
+
+    public static void name(){
+        System.out.println("What is your name?");
+    }
 }
