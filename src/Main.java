@@ -8,8 +8,8 @@ public class Main {
     public static void bye(){
         System.out.println("Bye!");
     }
-    public static int summa(int a, int b){
-        return a + b;
+    public static int summa(int c, int b){
+        return c + b;
     }
 
     public static void name(){
