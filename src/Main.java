@@ -1,18 +1,15 @@
+import java.util.Arrays;
+
 public class Main {
+    private static String name = "name";
+    private static String adress = "adress";
+    private static String foundationDate = "2022";
+    private static String founder = "founder";
+    private static String owner = "owner";
+    private static String[] properties = {"prop1", "prop2"};
+    private static boolean open = false;
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        bye();
-        System.out.println(summa(5,5));
-        name();
-    }
-    public static void bye(){
-        System.out.println("Bye!");
-    }
-    public static int summa(int c, int b){
-        return c + b;
+        System.out.printf("The facility %s was founded in %s by %s. Today it has %s and owner is %s. You can found it at %s. It is %s right now", name, foundationDate, founder, Arrays.toString(properties), owner, adress, open);
     }
 
-    public static void name(){
-        System.out.println("What is your name?");
-    }
 }
