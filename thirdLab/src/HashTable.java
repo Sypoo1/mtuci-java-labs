@@ -114,7 +114,7 @@ public class HashTable<K, V> {
         String s = "";
         for (int index = 0; index < SIZE; index++){
             if (table[index] != null){
-                s += "__Index in table = " + index + "__\n";
+                s += "Index in table = " + index + "\n";
                 s += "key = " + table[index].getKey().toString() + ", value = " + table[index].getValue().toString() + "\n";
                 Item<K, V> next = table[index].getNext();
                 while (next != null){
@@ -123,8 +123,6 @@ public class HashTable<K, V> {
                 }
             }
         }
-
-//         "key = " + key.toString() + ", value = " + value.toString();
         return s;
     }
 }
