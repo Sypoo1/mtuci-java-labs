@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
         HashTable<String, Car> myHashMap = new HashTable<String, Car>();
 
+        System.out.println(myHashMap.isEmpty());
+
         Car car1 = new Car("BMW", "M5 Competition", "2022");
         Car car2 = new Car("Porsche", "911 Turbo S", "2020");
         Car car3 = new Car("Tesla", "model S Plaid", "2023");
@@ -31,5 +33,8 @@ public class Main {
         System.out.println(myHashMap.get("в911тм"));
         System.out.println("");
         System.out.println(myHashMap);
+
+        System.out.println(myHashMap.isEmpty());
+        System.out.println(myHashMap.size());
     }
 }
