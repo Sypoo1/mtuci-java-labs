@@ -1,0 +1,15 @@
+Stack is empty. peek method is not available
+Stack is empty. pop method is not available
+Stack is empty. pop method is not available
+Stack is empty. peek method is not available
+Stack is empty. pop method is not available
+Stack is empty. pop method is not available
+Stack is empty. peek method is not available
+Stack is empty. pop method is not available
+Stack is empty. pop method is not available
+Stack is empty. peek method is not available
+Stack is empty. pop method is not available
+Stack is empty. pop method is not available
+Stack is empty. peek method is not available
+Stack is empty. pop method is not available
+Stack is empty. pop method is not available
