@@ -1,5 +1,7 @@
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Integer[] firstArray = {1, 2, 3};
         ArrayAverage.arrayAverage(firstArray, 3);
         Integer[] secondArray = {1, 2, 3} ;
@@ -12,23 +14,23 @@ public class Main {
         FileCopy.fileCopy("FileNotFound.txt", "files/fileB.txt");
         System.out.println("");
 
-        CustomStack myStack = new CustomStack();
-        try {
-            System.out.println(myStack.peek());
-        } catch (CustomEmptyStackException exception) {
-            System.out.println(exception.getMessage());
-        }
-        try{
-            System.out.println(myStack.pop());
-        }catch (CustomEmptyStackException exception){
-            System.out.println(exception.getMessage());
-        }
-        try{
-            myStack.push(1);
-            System.out.println(myStack.pop());
-            System.out.println(myStack.pop());
-        }catch (CustomEmptyStackException exception){
-            System.out.println(exception.getMessage());
-        }
+//        CustomStack myStack = new CustomStack();
+//        try {
+//            System.out.println(myStack.peek());
+//        } catch (CustomEmptyStackException exception) {
+//            System.out.println(exception.getMessage());
+//        }
+//        try{
+//            System.out.println(myStack.pop());
+//        }catch (CustomEmptyStackException exception){
+//            System.out.println(exception.getMessage());
+//        }
+//        try{
+//            myStack.push(1);
+//            System.out.println(myStack.pop());
+//            System.out.println(myStack.pop());
+//        }catch (CustomEmptyStackException exception){
+//            System.out.println(exception.getMessage());
+//        }
     }
 }
