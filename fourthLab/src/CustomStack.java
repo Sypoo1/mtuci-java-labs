@@ -10,23 +10,17 @@ public class CustomStack {
         length++;
     }
     public int pop() throws CustomEmptyStackException {
-        if (isEmpty()){
-            throw new CustomEmptyStackException("Stack is empty. pop method is not available");
-        }
+        if (isEmpty()) throw new CustomEmptyStackException("Stack is empty. pop method is not available");
         Node node = top;
         top = top.getNextNode();
         length--;
         return node.getData();
     }
     public int peek() throws CustomEmptyStackException {
-        if (isEmpty()){
-            throw new CustomEmptyStackException("Stack is empty. peek method is not available");
-        }
+        if (isEmpty()) throw new CustomEmptyStackException("Stack is empty. peek method is not available");
         return top.getData();
     }
-    public int size(){
-        return length;
-    }
+    public int size(){ return length; }
     public boolean isEmpty(){
         return length == 0;
     }
