@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
         Integer[] firstArray = {1, 2, 3};
         ArrayAverage.arrayAverage(firstArray, 3);
         Integer[] secondArray = {1, 2, 3} ;
