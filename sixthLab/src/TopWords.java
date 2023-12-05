@@ -29,7 +29,7 @@ public class TopWords {
         List<String> list = new ArrayList<>(map.keySet());
         Collections.sort(list, (s1, s2) -> map.get(s2) - map.get(s1));
         for (int i = 0; i < Math.min(10, list.size()); i++) {
-            System.out.println(list.get(i) + " : " + map.get(list.get(i)));
+            System.out.println(list.get(i));
         }
     }
 }

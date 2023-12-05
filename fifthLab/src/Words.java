@@ -12,6 +12,7 @@ public class Words {
             System.out.println("Words starts with " + letter + ":");
             while (matcher.find()){
                 System.out.println(matcher.group());
+
             }
         } catch (PatternSyntaxException e) {
             System.out.println("Error with pattern syntax" + e.getMessage());
