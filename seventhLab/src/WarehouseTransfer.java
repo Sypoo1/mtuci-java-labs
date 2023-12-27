@@ -17,11 +17,11 @@ public class WarehouseTransfer {
         Lock weightsLock = new ReentrantLock();
         CyclicBarrier barrier = new CyclicBarrier(NUM_LOADERS, () -> {
             System.out.println("Все грузчики доставили товары на другой склад");
-//            try {
-//                Thread.sleep(300);
-//            } catch (InterruptedException e) {
-//                throw new RuntimeException(e);
-//            }
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         });
 
         Thread[] loaders = new Thread[NUM_LOADERS];
@@ -33,7 +33,7 @@ public class WarehouseTransfer {
         for (Thread loader : loaders) {
             try {
                 loader.join();
-//                Thread.sleep(300);
+                Thread.sleep(300);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -67,7 +67,7 @@ public class WarehouseTransfer {
                     int currentIndex = index.getAndIncrement();
                     if (currentIndex < NUM_PRODUCTS && currentWeight + weights[currentIndex] <= maxWeight) {
                         currentWeight += weights[currentIndex];
-//                        Thread.sleep(50);
+                        Thread.sleep(350);
                         System.out.println("Грузчик " + Thread.currentThread().getName() + " поднял " + weights[currentIndex] + " кг товара, всего " + currentWeight);
                         // Удаляем вес товара из массива, чтобы другие грузчики не могли взять его
                         weights[currentIndex] = 0;
@@ -75,8 +75,8 @@ public class WarehouseTransfer {
                     } else {
                         needToLoad = false;
                     }
-//                } catch (InterruptedException e) {
-//                    throw new RuntimeException(e);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
                 } finally {
                     weightsLock.unlock();
                 }
